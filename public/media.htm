@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<!-- saved from url=(0046)http://localhost/leave-management-system/media -->
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <!--<base href="http://localhost/leave-management-system/">--><base href=".">
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./media_files/bootstrap.min.css">
+    <script src="./media_files/bootstrap.bundle.min.js.download"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com/">
+    <link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin="">
+    <link href="./media_files/css2" rel="stylesheet">
+    <link href="./media_files/css2(1)" rel="stylesheet">
+    <link rel="stylesheet" href="./media_files/jquery-ui.css">
+    <link rel="stylesheet" href="./media_files/style.css">
+    <link rel="stylesheet" href="./media_files/font-awesome.min.css">
+    <script src="./media_files/chart.js.download"></script>
+    <script src="./media_files/jquery.min.js.download"></script>
+    <script src="./media_files/jquery-1.12.4.js.download"></script>
+    <script src="./media_files/jquery-ui.js.download"></script>
+    <script src="./media_files/index.js.download"></script>
+    <title></title>
+<style>
+        @font-face {
+            font-family: 'NotoSans_online_security'; 
+            src: url(chrome-extension://llbcnfanfmjhpedaedhbcnpgeepdnnok/assets/fonts/noto-sans.woff);
+        }
+
+        @font-face {
+            font-family: 'NotoSans_bold_online_security'; 
+            src: url(chrome-extension://llbcnfanfmjhpedaedhbcnpgeepdnnok/assets/fonts/noto-sans-bold.woff);
+        }
+
+        @font-face {
+            font-family: 'NotoSans_semibold_online_security'; 
+            src: url(chrome-extension://llbcnfanfmjhpedaedhbcnpgeepdnnok/assets/fonts/noto-sans-semibold.ttf);
+        }
+</style></head>
+<body>
+    <div class=""><div class="row">
+<header>
+  <div class="" style="background:#1e1a1b">
+    <div class="container-fluid">
+      <div class="row ">
+        <div class="col-3 d-flex align-items-between my-3 mb-3 ">
+          <a href="http://localhost/leave-management-system/index.php"><img src="./media_files/logo.png" alt="logo" height="50" style="margin-left: 10px;"></a>
+        </div>
+        <div class="col-9">
+          <div class="d-flex flex-wrap align-items-center justify-content-center justify-content-lg-start">
+            <a href="http://localhost/" class="d-flex align-items-center my-2 my-lg-0 me-lg-auto text-white text-decoration-none">
+            </a>
+
+            <ul class="nav justify-content-center">
+             <a class="nav-link dropdown-toggle d-flex align-items-center" href="http://localhost/leave-management-system/#" id="userDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              <p class="my-4 text-white fw-bold">Welcome, bivek</p>
+              <img src="./media_files/user.png" alt="Profile" width="32" height="32" class="rounded-circle ms-2">
+            </a>
+            <ul class="dropdown-menu drop">
+              <li>
+                <a class="nav-list profile " href="http://localhost/leave-management-system/user/list/1">    <i class="fa fa-users"></i>
+    Profile</a>
+              </li>
+              <li>
+                                  <a class="nav-list logout" href="http://localhost/leave-management-system/dashboard/logout">    <i class="fa fa-sign-out"></i>
+    Logout</a>
+                              </li>
+            </ul>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+</header>
+
+</div></div><div class="mx-4"><div class="row"><div class="col-2"><div class="sidebar">
+    <ul class="nav nav-pills flex-column">
+                    <li class="nav-item">
+                <a class="nav-link nav-list " href="http://localhost/leave-management-system/dashboard">
+                        <i class="fa fa-tachometer"></i>
+                        Dashboard                </a>
+            </li>
+                        <li class="nav-item">
+                <a class="nav-link nav-list " href="http://localhost/leave-management-system/holiday">
+                        <i class="fa fa-superpowers"></i>
+                        Holiday                </a>
+            </li>
+                        <li class="nav-item">
+                <a class="nav-link nav-list " href="http://localhost/leave-management-system/leave">
+                        <i class="fa fa-leaf"></i>
+                        Leave                </a>
+            </li>
+                        <li class="nav-item">
+                <a class="nav-link nav-list active" href="http://localhost/leave-management-system/media">
+                        <i class="fa fa-medium"></i>
+                        Media                </a>
+            </li>
+                        <li class="nav-item">
+                <a class="nav-link nav-list " href="http://localhost/leave-management-system/setting">
+                        <i class="fa fa-cog"></i>
+                        Setting                </a>
+            </li>
+                        <li class="nav-item">
+                <a class="nav-link nav-list " href="http://localhost/leave-management-system/type">
+                        <i class="fa fa-puzzle-piece"></i>
+                        Type                </a>
+            </li>
+                        <li class="nav-item">
+                <a class="nav-link nav-list " href="http://localhost/leave-management-system/user/list">
+                        <i class="fa fa-users"></i>
+                        User                </a>
+            </li>
+                        <li class="nav-item">
+                <a class="nav-link nav-list " href="http://localhost/leave-management-system/widget">
+                        <i class="fa fa-sitemap"></i>
+                        Widget                </a>
+            </li>
+                    <li class="nav-item">
+                            <a class="nav-link nav-list logout" href="http://localhost/leave-management-system/dashboard/logout">    <i class="fa fa-sign-out"></i>
+    Logout</a>
+                    </li>
+    </ul>
+</div>
+</div>            <div class="col-10">
+                <form id="media-form" method="post" enctype="multipart/form-data">
+    <div class="trigger-file">
+        <input type="hidden" id="id" name="id">
+        <label for="file_to_upload" class="custom-file-upload">Choose File</label>
+        <input type="file" name="file_to_upload" id="file_to_upload">
+    </div>
+</form>
+
+
+    <div class="file-list" style="
+    margin-left: 0;
+">
+        <ul>
+                                            <li>
+                    <a href="http://localhost/leave-management-system/media/details/34">
+                        <img src="./media_files/login.png" alt="login" width="100">
+                    </a>
+                </li>
+                                            <li>
+                    <a href="http://localhost/leave-management-system/media/details/32">
+                        <img src="./media_files/login-bg.jpg" alt="login-bg" width="100">
+                    </a>
+                </li>
+                                            <li>
+                    <a href="http://localhost/leave-management-system/media/details/31">
+                        <img src="./media_files/login-page-bg.jpg" alt="login-page-bg" width="100">
+                    </a>
+                </li>
+                                            <li>
+                    <a href="http://localhost/leave-management-system/media/details/30">
+                        <img src="./media_files/loginPage.jpg" alt="loginPage" width="100">
+                    </a>
+                </li>
+                                            <li>
+                    <a href="http://localhost/leave-management-system/media/details/29">
+                        <img src="./media_files/dashboard.jpg" alt="dashboard" width="100">
+                    </a>
+                </li>
+                                            <li>
+                    <a href="http://localhost/leave-management-system/media/details/28">
+                        <img src="./media_files/loginPage.jpg" alt="loginPage" width="100">
+                    </a>
+                </li>
+                                            <li>
+                    <a href="http://localhost/leave-management-system/media/details/23">
+                        <img src="./media_files/login-page-bg.jpg" alt="login-page-bg" width="100">
+                    </a>
+                </li>
+                                            <li>
+                    <a href="http://localhost/leave-management-system/media/details/17">
+                        <img src="./media_files/login-bg.jpg" alt="login-bg" width="100">
+                    </a>
+                </li>
+                                            </ul>
+                <ul>
+                                <li>
+                    <a href="http://localhost/leave-management-system/media/details/16">
+                        <img src="./media_files/login-water-bg.jpg" alt="login-water-bg" width="100">
+                    </a>
+                </li>
+                    </ul>
+    </div>
+            </div>
+        </div><footer class="footer">
+  <div class="footer-container" style="width: 100%;
+  padding-right: 10px;
+  padding-left: 20px;
+  margin-right: auto;
+  margin-left: auto;
+  background-image: url(&#39;public/img/footer-bg.jpg&#39;);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed">
+    <span class="footer-content">©2024 Eagle Vision IT, All rights reserved.</span>
+  </div>
+</footer>
+
+</div></body></html>
