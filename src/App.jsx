@@ -4,10 +4,13 @@ import Intro from './components/intro/Intro'
 import Parallex from './components/parallex/Parallex'
 import Services from './components/services/Services'
 import Portfolio from './components/portfolio/Portfolio'
+import Contact from './components/contact/Contact'
+import { Cursor } from './components/cursor/Cursor'
 
 const App = () => {
 	return (
 		<>
+			<Cursor />
 			<section id='Homepage'>
 				<Navbar />
 				<Intro />
@@ -22,7 +25,9 @@ const App = () => {
 				<Parallex type='portfolio' />
 			</section>
 			<Portfolio />
-			<section id='Contact'>Contact</section>
+			<section id='Contact'>
+				<Contact />
+			</section>
 		</>
 	)
 }
